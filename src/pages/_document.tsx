@@ -6,7 +6,7 @@ class MyDocument extends Document {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
-          <link rel="icon" href="/yejiavatar.png" />
+          <link rel="icon" href="/favicon.ico" />
           <link
             rel="apple-touch-icon"
             sizes="192x192"
@@ -19,7 +19,7 @@ class MyDocument extends Document {
             href="/feed"
           ></link>
           {/* google search console */}
-          {CONFIG.googleSearchConsole.enable === false && (
+          {CONFIG.googleSearchConsole.enable === true && (
             <>
               <meta
                 name="google-site-verification"
@@ -28,7 +28,7 @@ class MyDocument extends Document {
             </>
           )}
           {/* naver search advisor */}
-          {CONFIG.naverSearchAdvisor.enable === false && (
+          {CONFIG.naverSearchAdvisor.enable === true && (
             <>
               <meta
                 name="naver-site-verification"
