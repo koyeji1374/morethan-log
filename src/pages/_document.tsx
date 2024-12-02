@@ -19,7 +19,7 @@ class MyDocument extends Document {
             href="/feed"
           ></link>
           {/* google search console */}
-          {CONFIG.googleSearchConsole.enable === true && (
+          {CONFIG.googleSearchConsole.enable === false && (
             <>
               <meta
                 name="google-site-verification"
@@ -28,7 +28,7 @@ class MyDocument extends Document {
             </>
           )}
           {/* naver search advisor */}
-          {CONFIG.naverSearchAdvisor.enable === true && (
+          {CONFIG.naverSearchAdvisor.enable === false && (
             <>
               <meta
                 name="naver-site-verification"
